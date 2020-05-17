@@ -5,35 +5,26 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 24,
-    paddingTop: Constants.statusBarHeight + 20,
+    paddingTop: Constants.statusBarHeight + 5,
     backgroundColor: '#F2C94C'
-    //backgroundColor: '#E5E5E5'
-  },
-
-  header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center'
   },
 
   headerText: {
     marginTop: 28,
     color: '#381564',
     fontSize: 15,
-    //color: '#737380',
-  },
+  }, 
 
-  headerTextBold: {
+   headerTextBold: {
     color: '#381564',
     fontWeight: 'bold'
-  },
+  }, 
 
   description: {
-    marginTop: 28,
+    marginTop: 24,
     color: '#381564',
     fontSize: 16,
     lineHeight: 24,
-    //color: '#737380'
   },
 
   incidentList: {
@@ -43,35 +34,21 @@ export default StyleSheet.create({
   incident: {
     padding: 24,
     borderRadius: 8,
-    backgroundColor: '#FFF',//FFF
+    backgroundColor: '#FFF',
     marginBottom: 16,
   },
 
   incidentProperty: {
     color: '#381564',
     fontSize: 14,
-    //color: '#41414d',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    marginTop: 24,
   },
 
   incidentValue: {
-    //color: '#381564',
     marginTop: 8,
     fontSize: 15,
-    marginBottom: 24,
     color: '#737380'
   },
-
-  detailsButton: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center'
-  },
-
-  detailsButtonText: {
-    //color: '#e02041',
-    color: '#381564', //381564
-    fontSize: 15,
-    fontWeight: 'bold'
-  },
+  
 });
