@@ -37,14 +37,14 @@ export default StyleSheet.create({
     marginBottom: 16,
   },
 
-  heroTitle: {
+  doacaoTitle: {
     color: '#381564',
     fontWeight: 'bold',
     fontSize: 20,
     lineHeight: 30,
   },
 
-  heroDescription: {
+  doacaoDescription: {
     fontSize: 15,
     color: '#737380',
     marginTop: 16,

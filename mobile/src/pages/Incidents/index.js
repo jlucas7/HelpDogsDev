@@ -23,10 +23,6 @@ export default function Incidents() {
     navigation.navigate('Detail', { incident }); 
   } 
 
-  function navigateBack() {
-    navigation.goBack()
-  }
-
   async function loadIncidents() {
     if (loading) {
       return;

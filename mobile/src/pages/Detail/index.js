@@ -1,24 +1,19 @@
 import React from 'react';
-import { useNavigation, useRoute } from '@react-navigation/native';
+import { useRoute } from '@react-navigation/native';
 import { View, Text, TouchableOpacity, Linking } from 'react-native';
 import * as MailComposer from 'expo-mail-composer';
 
 import styles from './styles';
 
 export default function Detail() {
-  const navigation = useNavigation();
   const route = useRoute();
 
   const incident = route.params.incident;
   const message = `Olá ${incident.name}, estou entrando em contato pois gostaria de ajudar no caso "${incident.title}" com o valor de ${Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value)}`;
 
-  function navigateBack() {
-    navigation.goBack()
-  }
-
   function sendMail() { 
     MailComposer.composeAsync({
-      subject: `Herói do caso: ${incident.title}`,
+      subject: `Ajudando no caso: ${incident.title}`,
       recipients: [incident.email],
       body: message,
     })
@@ -48,10 +43,10 @@ export default function Detail() {
       </View>
 
       <View style={styles.contactBox}>
-        <Text style={styles.heroTitle}>Faça Parte!</Text>
-        <Text style={styles.heroTitle}>Faça a sua doação.</Text>
+        <Text style={styles.doacaoTitle}>Faça Parte!</Text>
+        <Text style={styles.doacaoTitle}>Faça a sua doação.</Text>
 
-        <Text style={styles.heroDescription}>Entre em contato:</Text>
+        <Text style={styles.doacaoDescription}>Entre em contato:</Text>
 
         <View style={styles.actions}>
           <TouchableOpacity style={styles.action} onPress={sendWhatsapp}>

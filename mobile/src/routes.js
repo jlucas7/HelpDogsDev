@@ -16,12 +16,12 @@ export default function Routes() {
 
       <AppStack.Navigator
         screenOptions={
-           { 
-             headerStyle: {backgroundColor: '#F2C94C',height: 90} ,
-             headerTitle: props => <LogoTitle/>,
-             headerTitleAlign: "center"
-            }
-          } 
+          { 
+            headerStyle: {backgroundColor: '#F2C94C',height: 90} ,
+            headerTitle: props => <LogoTitle/>,
+            headerTitleAlign: "center"
+          }
+        } 
       >
         <AppStack.Screen name="Ongs" component={Ongs} />
         <AppStack.Screen name="Incidents" component={Incidents} />
