@@ -66,16 +66,22 @@ export default function Home() {
               borderBottomColor: "#381564",
               borderBottomWidth: 1,
               marginHorizontal: 5,
-              marginBottom: 15
+              marginBottom: 8
             }}>
-              <Icon name="enviroment" size={20} color="#381564" /> Localização da ONG
+              <Icon name="enviroment" size={22} color="#381564" /> Localização da ONG
               </Text>
-            <Text style={{ fontSize: 18, marginHorizontal: 10 }}>Título do endereço</Text>
-            <Text style={{ marginVertical: 10, fontSize: 16, marginHorizontal: 10 }}>
-              Rua do endereço,
-              complemento do endereço,
-              numero,
-              Cidade, Estado
+            <Text style={{ fontSize: 18, marginHorizontal:10, fontWeight: 'bold', color:"#381564"}}>ONG Parque Bela Vista</Text>
+            <Text style={{ marginVertical: 5, fontSize: 16, marginHorizontal: 10 }}>
+              Avenida Silva Santos, 4360
+            </Text>
+            <Text style={{ marginVertical: 5, fontSize: 16, marginHorizontal: 10 }}>
+              <Text style={{fontSize: 16, fontWeight: 'bold' }}>Telefone:</Text>  (71) 99999-9999
+            </Text>
+            <Text style={{ marginTop:5, fontSize: 16, marginHorizontal: 10, fontWeight: 'bold' }}>
+              Horário de funcionamento:
+            </Text>
+            <Text style={{ fontSize: 16, marginHorizontal: 10 }}>
+              Todos os dias - 09:00 às 22:00
             </Text>
           </View>
         </>

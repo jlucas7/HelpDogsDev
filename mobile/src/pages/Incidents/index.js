@@ -62,6 +62,7 @@ export default function Incidents() {
         keyExtractor={incident => String(incident.id)}
         onEndReached={loadIncidents}
         onEndReachedThreshold={0.2}
+        showsVerticalScrollIndicator={false}
         renderItem={({ item: incident }) => (
           <TouchableOpacity
             onPress={() => navigateToDetail(incident)}

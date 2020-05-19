@@ -58,6 +58,7 @@ export default function Ongs() {
         keyExtractor={ong => ong.id}
         onEndReached={loadOngs}
         onEndReachedThreshold={0.2}
+        showsVerticalScrollIndicator={false}
         renderItem={({ item: ong }) => (
             <TouchableOpacity 
                 onPress={() => navigateToHome(ong.id)} 

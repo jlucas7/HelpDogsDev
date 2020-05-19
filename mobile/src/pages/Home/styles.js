@@ -37,13 +37,12 @@ export default StyleSheet.create({
     textAlign: "center",
     fontSize: 40,
     paddingVertical: 10,
-    backgroundColor: "#f5f5"
   },
 
   info: {
-    backgroundColor: '#FFF',
+    paddingTop:36,
     flexDirection: "column",
     marginBottom: 30,
-    padding: 10,
+    //padding: 10,
   }
 });
