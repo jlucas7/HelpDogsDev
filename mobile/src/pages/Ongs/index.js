@@ -14,9 +14,13 @@ export default function Ongs() {
 
   const navigation = useNavigation();
 
-  function navigateToIncident(ong_id) { 
+/*   function navigateToIncident(ong_id) { 
     navigation.navigate('Incidents', { ong_id }); 
-  } 
+  }  */
+
+  function navigateToHome(ong_id){
+    navigation.navigate('Home', { ong_id });
+  }
 
   async function loadOngs() {
     if (loading) {
@@ -56,7 +60,7 @@ export default function Ongs() {
         onEndReachedThreshold={0.2}
         renderItem={({ item: ong }) => (
             <TouchableOpacity 
-                onPress={() => navigateToIncident(ong.id)} 
+                onPress={() => navigateToHome(ong.id)} 
             >
               <View style={styles.ong}>
                   <Image source={require("../../" + "assets/ong2" + ".png")} />
