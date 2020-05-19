@@ -12,15 +12,15 @@ function infiniteScroll(dataList){
 
     setInterval(function() {
         scrolled ++
-        if(scrolled < numberOfData)
-        scrollValue = scrollValue + width
 
-        else{
+        if(scrolled < numberOfData){
+            scrollValue = scrollValue + width           
+        }else{
             scrollValue = 0
             scrolled = 0
         }
 
-        this.flatList.scrollToOffset({ animated: true, offset: scrollValue})
+        this.flatList.scrollToOffset({ animated: true, offset: scrollValue })
         
     }, 3000)
 }
