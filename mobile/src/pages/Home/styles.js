@@ -1,48 +1,74 @@
 import { StyleSheet, Dimensions } from 'react-native';
 import Constants from 'expo-constants';
 
-//const { width, height } = Dimensions.get('window')
-
 export default StyleSheet.create({
-  container: {
+  containerExterno:{
     flex: 1,
-    paddingHorizontal: 24,
     paddingTop: Constants.statusBarHeight + 5,
     backgroundColor: '#F2C94C'
+  },
+/*   -------------------------------------------------------------------------------------------------------------- */
+  wrapper: {
+  },
+  slide1: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#9DD6EB',
+  },
+  slide2: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#97CAE5',
+  },
+  slide3: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#92BBD9',
+  },
+  text: {
+    color: '#fff',
+    fontSize: 30,
+    fontWeight: 'bold',
+  },
+  /* -------------------------------------------------------------------------------------------------------------- */
+  container: {
+    //flex: 1,
+    paddingHorizontal: 20,
   },
 
   cardView: {
     flex: 1,
-    margin: 50,
+    marginHorizontal: 10,
+    marginVertical:50,
     borderRadius: 10,
     flexDirection: "column",
   },
 
-  cardCima: {
-    flex: 1,
-    backgroundColor: '#381564',
-    borderRadius: 10,
-    marginBottom: 5,
+  containerCard:{
+    flexDirection:"row"
   },
 
-  cardBaixo: {
-    flex: 1,
+  card:{
+    flex:1,
     backgroundColor: '#381564',
     borderRadius: 10,
-    marginTop: 5,
+    height:80,
+    margin:2,
+    padding:8
   },
 
   cardTitle: {
     color: 'white',
-    textAlign: "center",
-    fontSize: 40,
-    paddingVertical: 10,
+    fontSize: 20,
+    paddingVertical: 13,
   },
 
   info: {
     paddingTop:36,
     flexDirection: "column",
     marginBottom: 30,
-    //padding: 10,
   }
 });
