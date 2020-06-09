@@ -5,13 +5,13 @@ import MapView, {Marker} from 'react-native-maps';
 import styles from './styles';
 
 export default function Location() {
-    const [region, setRegion] = useState();
+    const [region, setRegion] = useState([]);
 
     async function loadRegion() {
 
         await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=40220050&key=AIzaSyAT3GB0fdI8uG-5MdlfAWachPU5AKRFQ7Q`)
             .then(res => res.json())
-            .then(res => { setRegion(res.results[0].geometry.location);});   
+            .then(res => { setRegion(res.results[0].geometry.location);});    
     } 
  
     useEffect(() => {
