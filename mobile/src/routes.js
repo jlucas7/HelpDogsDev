@@ -9,6 +9,7 @@ import Incidents from './pages/Incidents';
 import Detail from './pages/Detail';
 import Home from './pages/Home';
 import Location from './pages/Location';
+import Adote from './pages/Adote';
 
 import LogoTitle from './components/LogoTitle';
 
@@ -30,6 +31,7 @@ export default function Routes() {
         <AppStack.Screen name="Detail" component={Detail} />
         <AppStack.Screen name="Home" component={Home} />
         <AppStack.Screen name="Location" component={Location} />
+        <AppStack.Screen name="Adote" component={Adote} />
       </AppStack.Navigator>
 
     </NavigationContainer>
