@@ -8,6 +8,7 @@ import Ongs from './pages/Ongs';
 import Incidents from './pages/Incidents';
 import Detail from './pages/Detail';
 import Home from './pages/Home';
+import Location from './pages/Location';
 
 import LogoTitle from './components/LogoTitle';
 
@@ -28,6 +29,7 @@ export default function Routes() {
         <AppStack.Screen name="Incidents" component={Incidents} />
         <AppStack.Screen name="Detail" component={Detail} />
         <AppStack.Screen name="Home" component={Home} />
+        <AppStack.Screen name="Location" component={Location} />
       </AppStack.Navigator>
 
     </NavigationContainer>

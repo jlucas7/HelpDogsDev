@@ -39,6 +39,10 @@ export default function Home() {
     navigation.navigate('Incidents', { ong_id });
   }
 
+  function navigateToLocation() {
+    navigation.navigate('Location');
+  }
+
   return (
     <View style={styles.containerExterno}>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -61,10 +65,12 @@ export default function Home() {
               </View>
 
               <View style={styles.containerCard}>
-                <View style={styles.card}>
-                    <Text style={[styles.cardTitle, {fontSize:15, paddingBottom:0, fontWeight:"bold"}]}> <Entypo name="location" size={22} color="#FFF" />  LOCALIZAÇÃO</Text>
-                    <Text style={[styles.cardTitle,{fontSize:12,paddingTop:0}]}>           Encontre-nos</Text>
-                </View>
+              <View style={styles.card}>
+                <TouchableOpacity onPress={() => navigateToLocation()}>
+                  <Text style={[styles.cardTitle, {fontSize:15, paddingBottom:0, fontWeight:"bold"}]}> <Entypo name="location" size={22} color="#FFF" />  LOCALIZAÇÃO</Text>
+                  <Text style={[styles.cardTitle,{fontSize:12,paddingTop:0}]}>           Encontre-nos</Text>
+                </TouchableOpacity>
+              </View>
 
                 <View style={[styles.card, {backgroundColor: '#F2C94C'}]}>
                 </View>
