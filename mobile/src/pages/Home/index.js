@@ -43,6 +43,10 @@ export default function Home() {
     navigation.navigate('Location');
   }
 
+  function navigateToAdote(ong_id) {
+    navigation.navigate('Adote', { ong_id });
+  }
+
   return (
     <View style={styles.containerExterno}>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -59,8 +63,10 @@ export default function Home() {
                 </View>
 
                 <View style={styles.card}>
-                  <Text style={[styles.cardTitle, {fontSize:15, paddingBottom:0, fontWeight:"bold"}]}><Entypo name="baidu" size={22} color="#FFF" />  ADOTE</Text>
-                  <Text style={[styles.cardTitle,{fontSize:12,paddingTop:0}]}>         Faça parte</Text>
+                  <TouchableOpacity onPress={() => navigateToAdote(ongId)}>
+                    <Text style={[styles.cardTitle, {fontSize:15, paddingBottom:0, fontWeight:"bold"}]}><Entypo name="baidu" size={22} color="#FFF" />  ADOTE</Text>
+                    <Text style={[styles.cardTitle,{fontSize:12,paddingTop:0}]}>         Faça parte</Text>
+                  </TouchableOpacity>
                 </View>
               </View>
 
